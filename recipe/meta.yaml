@@ -1,5 +1,5 @@
-{% set version = "1.0.9" %}
-
+{% set version = "1.0.10" %}
+{% set python_min = "3.10" %}
 
 package:
   name: xcube_geodb
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-geodb/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b3946be9ce363a586da12be8909073ca732888769463ae3f0d18237603fb0db1
+  sha256: ab1da3c2f71b2f298c67382fa0de95780359cdacc6ff31ce7b030bf68e7dfb57
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,10 +20,10 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - geopandas
-    - pandas
     - pip
     - psycopg2
     - python-dotenv
@@ -43,7 +43,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   description: geodb is a Python package
-  doc_url: https://xcube_geodb.readthedocs.io
+  doc_url: https://xcube-dev.github.io/xcube-geodb
   dev_url: https://github.com/xcube-dev/xcube-geodb
 
 extra:
