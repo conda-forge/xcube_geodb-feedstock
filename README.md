@@ -33,7 +33,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-xcube_geodb-green.svg)](https://anaconda.org/conda-forge/xcube_geodb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xcube_geodb.svg)](https://anaconda.org/conda-forge/xcube_geodb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xcube_geodb.svg)](https://anaconda.org/conda-forge/xcube_geodb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xcube_geodb.svg)](https://anaconda.org/conda-forge/xcube_geodb) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xcube__geodb-green.svg)](https://anaconda.org/conda-forge/xcube_geodb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xcube_geodb.svg)](https://anaconda.org/conda-forge/xcube_geodb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xcube_geodb.svg)](https://anaconda.org/conda-forge/xcube_geodb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xcube_geodb.svg)](https://anaconda.org/conda-forge/xcube_geodb) |
 
 Installing xcube_geodb
 ======================
