@@ -1,5 +1,4 @@
 {% set version = "1.1.1" %}
-{% set python_min = "3.10" %}
 
 package:
   name: xcube_geodb
@@ -12,29 +11,33 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  entry_points:
-    - geodb = xcube_geodb.cli.main:main
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python {{ python_min }}.*
     - pip
-    - setuptools
+    - setuptools >=61
+    - wheel
   run:
     - python >={{ python_min }}
     - geopandas
-    - pip
-    - psycopg2
+    - pandas
+    - pyproj
+    - pystac-core >=1.15,<2
     - python-dotenv
     - requests
     - shapely
 
 test:
   requires:
-    - python {{ python_min }}
+    - pip
+    - python {{ python_min }}.*
   imports:
     - xcube_geodb.core.geodb
+    - xcube_geodb.core.metadata
+  commands:
+    - python -m pip check
 
 about:
   summary: xcube geoDB is a geo-spatial database within the xcube ecosystem.
