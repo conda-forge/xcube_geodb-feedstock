@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-geodb/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cc42142cf887838676947483a16d18102d95fb92e09c5b3e7bf90875a9ed6142
+  sha256: 2ec34e6b97eaa40121d49979ea14ebcacaa99013608532d345a3ed3be43767fc
 
 build:
   number: 0
